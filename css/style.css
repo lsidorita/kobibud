@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    background-color: rgb(216, 175, 255);
+    font-family: 'Courier Prime', monospace;
+}
+header{
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(163, 112, 211, 0.555);
+    position: sticky;
+    top: 1px;
+}
+a{
+    text-decoration: none;
+    color:beige;
+}
+
+header nav{
+    margin-top: 20px;
+}
+header nav ul li{
+    border: 5px solid rgba(173, 124, 219, 0.555);
+    display: inline-block;
+    padding: 10px;
+}
+main div p, h2{
+    display: inline;
+    gap: 50px;
+}
+main div div{
+    text-align: center;
+    margin-top: 20px;
+    height: 400px;
+  
+}
+main div div h2{
+    padding: 40px;
+    text-align: center;
+}
+section {
+    position: fixed;
+    bottom: 0;
+}
+section iframe{
+    margin-left: 1100px;
+    margin-bottom: 10px;
+}
+.fake{
+    background-color: rgba(245, 245, 220, 0.377);
+    margin-top: 40px;
+    text-align: center;
+    height: 250px;
+}
+.size{
+    height: 100px;
+    width: 100px;
+}
+.sizee{
+    height: 200px;
+    width: 200px;
+    margin-right: 120px;
+}
+.align{
+    text-align: center;
+    
+}
