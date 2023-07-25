@@ -1,0 +1,21 @@
+$color-principal: #FFE1E5;
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-end{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+body{
+    background-color:$color-principal;
+}
+h1{
+    font-size: 1rem;
+}
+footer div{
+    @include flex-center;
+}

@@ -1,0 +1,49 @@
+
+main{
+    div{
+        .contenedor {
+            @include flex-center;
+            position: relative;
+            height: 43vh;
+           //mixin
+          }
+        
+        div{
+            .lado{
+                @include flex-center;
+            }
+            
+            .c-img {
+                position: absolute;
+                width: 100%;
+                z-index: 0;
+                overflow:hidden;
+              }
+            
+            .c-img img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+            .txt {
+                @include flex-center;
+                text-align: center;
+                z-index: 1;
+                color: #000000;
+              }
+            div{
+                
+                h1{
+                    font-size: 2rem;
+                }
+                button{
+                    margin-top: 2rem; //boton extend
+                }
+            }
+            h2{
+                font-size: 1.5rem;
+            }
+            
+        }
+    }
+}

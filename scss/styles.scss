@@ -1,0 +1,13 @@
+@import "utilidades/variables";
+@import "utilidades/header";
+@import "utilidades/main";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+@media only screen and (max-width: 600px){
+    main div div div img{
+        display: none;
+    }
+}
