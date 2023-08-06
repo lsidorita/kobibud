@@ -1,14 +1,21 @@
 $color-principal: #FFE1E5;
-
+@mixin grid-mq{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    justify-items: center;
+    object-fit: cover;
+}
 @mixin flex-center{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-@mixin flex-end{
+@mixin flex-col-center{
     display: flex;
-    justify-content: end;
-    align-items: end;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
 }
 body{
     background-color:$color-principal;

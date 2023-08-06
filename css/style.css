@@ -9,13 +9,45 @@ footer div {
   justify-content: center;
   align-items: center; }
 
-header nav {
-  background-color: #FEF5F4;
-  width: 100%; }
+header {
+  font-weight: bold; }
+  header nav {
+    background-color: #FEF5F4;
+    width: 100%; }
 
 .nav-link {
   text-decoration: none;
   color: #D1A9DD; }
+
+main section .text-p-proy {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2.5rem; }
+
+main section .cont-cajas {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start; }
+  main section .cont-cajas .imgproy img {
+    border-radius: 8rem; }
+  main section .cont-cajas .textproy {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    main section .cont-cajas .textproy h3 {
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.3rem;
+      font-weight: bold; }
+    main section .cont-cajas .textproy p {
+      margin: 0.1rem; }
+
+main section .cont-princ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem; }
 
 main div .contenedor {
   display: flex;
@@ -23,11 +55,6 @@ main div .contenedor {
   align-items: center;
   position: relative;
   height: 43vh; }
-
-main div div .lado {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
 
 main div div .c-img {
   position: absolute;
@@ -48,14 +75,83 @@ main div div .txt {
   z-index: 1;
   color: #000000; }
 
-main div div div h1 {
-  font-size: 2rem; }
+main div div .imagen img {
+  width: 100%;
+  height: auto; }
 
-main div div div button {
-  margin-top: 2rem; }
+main div div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start; }
+  main div div div h1 {
+    font-size: 2rem; }
+  main div div div p {
+    font-size: 1rem;
+    margin-top: 2rem; }
 
 main div div h2 {
   font-size: 1.5rem; }
+
+main div div button {
+  background-color: black;
+  border-radius: 1rem;
+  color: beige;
+  padding: 0.5rem;
+  font-weight: bold; }
+
+main .cont-hist {
+  background-color: #FEF5F4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+  align-items: center; }
+  main .cont-hist h1 {
+    text-align: center;
+    margin-bottom: 5rem; }
+  main .cont-hist .cont-hist2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-left: 4rem; }
+  main .cont-hist .img-hist {
+    display: flex;
+    align-items: center; }
+    main .cont-hist .img-hist img {
+      max-width: 100%;
+      height: auto; }
+
+main .nosebro {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem; }
+
+main .grilla {
+  margin-top: 7rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: center;
+  align-items: start;
+  object-fit: cover;
+  row-gap: 0.3rem;
+  column-gap: 3rem; }
+  main .grilla div p {
+    margin-top: 2rem;
+    font-size: 2rem; }
+
+.align div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; }
+  .align div .cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start; }
 
 * {
   margin: 0;
@@ -63,5 +159,38 @@ main div div h2 {
   box-sizing: border-box; }
 
 @media only screen and (max-width: 600px) {
-  main div div div img {
+  main div div div .none {
     display: none; } }
+
+footer div {
+  width: 100%;
+  margin-top: 1rem;
+  border: 1px solid #dbd3e2; }
+  footer div p {
+    padding: 0.5rem;
+    margin-top: 0.3rem; }
+
+h1 {
+  font-size: 3rem; }
+
+section {
+  margin-top: 4rem; }
+  section form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold; }
+    section form legend {
+      font-weight: bold; }
+    section form input {
+      border-radius: 1rem; }
+    section form div {
+      margin-top: 1rem; }
+      section form div button {
+        padding: 0.5rem;
+        border-radius: 1.5rem;
+        background-color: black;
+        color: beige;
+        margin-left: 7.5rem;
+        margin-top: 2rem;
+        font-weight: bold; }

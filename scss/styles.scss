@@ -7,7 +7,46 @@
     box-sizing:border-box;
 }
 @media only screen and (max-width: 600px){
-    main div div div img{
+    main div div div .none{
         display: none;
+       
+    }
+
+}
+footer div{
+    width: 100%;
+    margin-top: 1rem;
+    border: 1px solid rgb(219, 211, 226);
+    p{
+        padding: 0.5rem;
+        margin-top: 0.3rem;
+    }
+}
+h1 { 
+    font-size: 3rem;
+}
+section{
+    margin-top:4rem;
+    form{
+        @include flex-center;
+        font-weight: bold;
+        legend{
+            font-weight: bold;
+        }
+        input{
+            border-radius: 1rem;
+        }
+        div{
+            margin-top: 1rem;;
+            button{
+                padding: 0.5rem;
+                border-radius: 1.5rem;
+                background-color: black;
+                color:beige;
+                margin-left: 7.5rem;
+                margin-top: 2rem;
+                font-weight: bold;
+            }
+        }
     }
 }
