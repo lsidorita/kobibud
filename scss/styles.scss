@@ -8,10 +8,16 @@
 }
 @media only screen and (max-width: 768px){
    
-    .none{
-        display: none;
-    }
     main{
+        .miswebos{
+            text-align: center;
+        }
+        .nosebro{
+            font-size: 1.8rem;
+        }
+        .grilla{
+            @include flex-col-center;
+        }
         .cont-hist{
             align-items: center;
             max-width: 100%;
@@ -19,9 +25,8 @@
             padding: 0;
             grid-template-areas: "conthist2 conthist2";
             .cont-hist2{
-                max-width: 100%; 
-                align-items: start;
-                padding: 2rem;
+                text-align: center;
+                grid-area: conthist2;
             }
             .img-hist{
                 img{
@@ -36,6 +41,39 @@
         }
     }
     
+}
+@media only screen and (min-width: 768px){
+    main{
+        .miswebos{
+            text-align: center;
+            @include flex-col-center;
+            .box{
+                padding: 1em;
+                border-radius: 15px;
+                background-color: #c5aac931;
+                width: 75%;
+                margin: 1em;
+                box-shadow: 15px 10px 10px rgba(20, 2, 2, 0.623);
+            }
+        }
+        .none{
+            display: none;
+        }
+        .grilla{
+            @include flex-col-center;
+            .box2{
+                border-radius: 75%;
+                box-shadow: 2px 2px 2px black;
+                padding: 1em;
+            }
+        }
+        div {
+            .contenedor{
+                height: fit-content;
+                padding: 2em;
+            }
+        }
+    }
 }
 footer div{
     width: 100%;

@@ -14,8 +14,8 @@ $color-principal: #FFE1E5;
 @mixin flex-col-center{
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
 }
 body{
     background-color:$color-principal;

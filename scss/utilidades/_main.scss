@@ -102,9 +102,8 @@ main{
         }
 //arreglar grilla para que use las 2 columnas y asi se alineen
     .cont-hist2{
-        grid-area: conthist2;
-        @include flex-col-center;
-        margin-left: 4rem;
+        text-align: center;
+        margin: 1rem;
     }
     .img-hist{
         display: flex;
@@ -138,7 +137,7 @@ main{
         div{
            p{
             margin-top:2rem;
-            font-size: 2rem;
+            font-size: 1.5rem;
            }
         }
     }

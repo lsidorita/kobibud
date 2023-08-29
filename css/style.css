@@ -29,8 +29,8 @@ main section .cont-cajas {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start; }
+  justify-content: center;
+  align-items: center; }
   main section .cont-cajas .imgproy img {
     border-radius: 8rem; }
   main section .cont-cajas .textproy {
@@ -85,8 +85,8 @@ main div div .imagen img {
 main div div div {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start; }
+  justify-content: center;
+  align-items: center; }
   main div div div h1 {
     font-size: 2rem; }
   main div div div p {
@@ -113,12 +113,8 @@ main .cont-hist {
     text-align: center;
     margin-bottom: 5rem; }
   main .cont-hist .cont-hist2 {
-    grid-area: conthist2;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    margin-left: 4rem; }
+    text-align: center;
+    margin: 1rem; }
   main .cont-hist .img-hist {
     display: flex;
     align-items: center; }
@@ -144,7 +140,7 @@ main .grilla {
   column-gap: 3rem; }
   main .grilla div p {
     margin-top: 2rem;
-    font-size: 2rem; }
+    font-size: 1.5rem; }
 
 .align div {
   display: flex;
@@ -154,8 +150,8 @@ main .grilla {
   .align div .cont {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start; }
+    justify-content: center;
+    align-items: center; }
 
 * {
   margin: 0;
@@ -163,8 +159,15 @@ main .grilla {
   box-sizing: border-box; }
 
 @media only screen and (max-width: 768px) {
-  .none {
-    display: none; }
+  main .miswebos {
+    text-align: center; }
+  main .nosebro {
+    font-size: 1.8rem; }
+  main .grilla {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   main .cont-hist {
     align-items: center;
     max-width: 100%;
@@ -172,13 +175,41 @@ main .grilla {
     padding: 0;
     grid-template-areas: "conthist2 conthist2"; }
     main .cont-hist .cont-hist2 {
-      max-width: 100%;
-      align-items: start;
-      padding: 2rem; }
+      text-align: center;
+      grid-area: conthist2; }
     main .cont-hist .img-hist img {
       display: none; }
   main section .todo {
     flex-direction: column; } }
+
+@media only screen and (min-width: 768px) {
+  main .miswebos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .miswebos .box {
+      padding: 1em;
+      border-radius: 15px;
+      background-color: #c5aac931;
+      width: 75%;
+      margin: 1em;
+      box-shadow: 15px 10px 10px rgba(20, 2, 2, 0.623); }
+  main .none {
+    display: none; }
+  main .grilla {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .grilla .box2 {
+      border-radius: 75%;
+      box-shadow: 2px 2px 2px black;
+      padding: 1em; }
+  main div .contenedor {
+    height: fit-content;
+    padding: 2em; } }
 
 footer div {
   width: 100%;
