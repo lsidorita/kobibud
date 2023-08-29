@@ -6,12 +6,36 @@
     padding: 0;
     box-sizing:border-box;
 }
-@media only screen and (max-width: 600px){
-    main div div div .none{
+@media only screen and (max-width: 768px){
+   
+    .none{
         display: none;
-       
     }
-
+    main{
+        .cont-hist{
+            align-items: center;
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+            grid-template-areas: "conthist2 conthist2";
+            .cont-hist2{
+                max-width: 100%; 
+                align-items: start;
+                padding: 2rem;
+            }
+            .img-hist{
+                img{
+                    display: none;
+                }
+            }
+        }
+        section{
+            .todo{
+                flex-direction: column;
+            }
+        }
+    }
+    
 }
 footer div{
     width: 100%;

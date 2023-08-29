@@ -7,6 +7,8 @@ main{
             margin-bottom: 2.5rem;
         }
         .cont-cajas{
+            width: 256px;
+            align-items: center;
             @include flex-col-center;
             .imgproy img{
                 
@@ -29,6 +31,7 @@ main{
         }
         .cont-princ{
             @include flex-center;
+            flex-wrap:wrap;
             gap: 3rem;
         }
     }
@@ -97,8 +100,9 @@ main{
             text-align:center;
             margin-bottom: 5rem;
         }
-
+//arreglar grilla para que use las 2 columnas y asi se alineen
     .cont-hist2{
+        grid-area: conthist2;
         @include flex-col-center;
         margin-left: 4rem;
     }

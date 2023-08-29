@@ -25,6 +25,8 @@ main section .text-p-proy {
   margin-bottom: 2.5rem; }
 
 main section .cont-cajas {
+  width: 256px;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -47,6 +49,7 @@ main section .cont-princ {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 3rem; }
 
 main div .contenedor {
@@ -110,6 +113,7 @@ main .cont-hist {
     text-align: center;
     margin-bottom: 5rem; }
   main .cont-hist .cont-hist2 {
+    grid-area: conthist2;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -158,9 +162,23 @@ main .grilla {
   padding: 0;
   box-sizing: border-box; }
 
-@media only screen and (max-width: 600px) {
-  main div div div .none {
-    display: none; } }
+@media only screen and (max-width: 768px) {
+  .none {
+    display: none; }
+  main .cont-hist {
+    align-items: center;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    grid-template-areas: "conthist2 conthist2"; }
+    main .cont-hist .cont-hist2 {
+      max-width: 100%;
+      align-items: start;
+      padding: 2rem; }
+    main .cont-hist .img-hist img {
+      display: none; }
+  main section .todo {
+    flex-direction: column; } }
 
 footer div {
   width: 100%;
