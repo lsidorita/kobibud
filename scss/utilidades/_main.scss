@@ -142,6 +142,14 @@ main{
         }
     }
 }
+section {
+    .container{
+        @include flex-col-center;
+        .form-container{
+            @include flex-col-center;
+        }
+    }
+}
 .align{
     div{ 
         @include flex-center;
