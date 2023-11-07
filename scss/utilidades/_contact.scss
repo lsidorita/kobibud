@@ -1,0 +1,105 @@
+
+  .contact-container {
+    text-align: left;
+    max-width: 70%;
+    margin: 12px auto;
+  }
+  @media screen and (min-width: 500px) {
+    .contact-container {
+      max-width: 600px;
+    }
+    
+  }
+  .contact-header {
+    text-align: left;
+  }
+  
+  .contact-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-label {
+    margin-bottom: 1rem;
+  }
+  
+  .label-text {
+    display: block;
+    font-weight: 700;
+  }
+  
+  .input-field {
+    width: 100%;
+    height: 2rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 0 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  .input-name {
+    /* Estilos específicos para el campo de nombre si es necesario */
+  }
+  s
+  .input-email {
+    /* Estilos específicos para el campo de correo si es necesario */
+  }
+  
+  .textarea-field {
+    height: 5rem;
+  }
+  
+  .button-group {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .save-button {
+    background-color: green; /* Cambia el color según tus preferencias */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .recover-button {
+    background-color: blue; /* Cambia el color según tus preferencias */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .delete-button {
+    background-color: red; /* Cambia el color según tus preferencias */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .submit-button {
+    background-color: #007BFF; /* Cambia el color según tus preferencias */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    align-self: flex-end; /* Alinea el botón de enviar al final del formulario */
+  }
+  

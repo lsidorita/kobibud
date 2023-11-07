@@ -1,161 +1,179 @@
-
-main{
-    section{
-        .text-p-proy{
-            text-align: center;
-            margin-top: 3rem;
-            margin-bottom: 2.5rem;
-        }
-        .cont-cajas{
-            width: 256px;
-            align-items: center;
-            @include flex-col-center;
-            .imgproy img{
-                
-                border-radius: 8rem;
-            }
-            .textproy{
-               
-                @include flex-center;
-                h3{ 
-                    margin-top: 1rem;
-                    margin-bottom: 1.5rem;
-                    font-size: 1.3rem;
-                    font-weight: bold;
-                }
-                p{
-                    margin: 0.1rem;
-                }
-            }
-            
-        }
-        .cont-princ{
-            @include flex-center;
-            flex-wrap:wrap;
-            gap: 3rem;
-        }
+.recover-buttonmain {
+  section {
+    .text-p-proy {
+      text-align: center;
+      margin-top: 3rem;
+      margin-bottom: 2.5rem;
     }
-    div{ //primer div contenedor e historia
-        .contenedor { // 1
-            @include flex-center;
-            position: relative;
-            height: 43vh;
-           //mixin
-          }
-        
-          div{// contenedores content 
-               
-            .c-img { // contenedor de imagen (1)
-                position: absolute;
-                width: 100%;
-                z-index: 0;
-                overflow:hidden;
-              }
-            
-            .c-img img { // 1.2
-                object-fit: cover;
-                width: 100%;
-                height: 100%;
-            }
-            .txt { // 1.1, clase contenedor
-                @include flex-center;
-                text-align: center;
-                z-index: 1;
-                color: #000000;
-              }
-            .imagen img {
-                width: 100%;
-                height: auto;
-              }
-            div{ //div banner 
-                
-                h1{ // 1.1 dentro
-                    font-size: 2rem;
-                }
-                @include flex-col-center;
-                p{
-                    font-size: 1rem;
-                    margin-top: 2rem;
-                }
-                }
-            h2{ // 2.1.1, texto 2da seccion
-                font-size: 1.5rem;
-            }
-            button{
-                background-color: rgb(0, 0, 0);
-                border-radius: 1rem;
-                color:beige;
-                padding: 0.5rem;
-                font-weight: bold;
-            }
-        }
-    }
-    .cont-hist{ 
-        background-color:#FEF5F4 ;           
-        display: grid;
-        grid-template-columns: 1fr 1fr; 
-        grid-gap: 1.5rem;
-        align-items: center;
-        h1{
-            text-align:center;
-            margin-bottom: 5rem;
-        }
-//arreglar grilla para que use las 2 columnas y asi se alineen
-    .cont-hist2{
-        text-align: center;
-        margin: 1rem;
-    }
-    .img-hist{
-        display: flex;
-        align-items: center;
-        img{
-            max-width: 100%; 
-            height: auto;  
-        }
-    }
-    
-    }
-    
-}
-main{
-    .nosebro{
-        text-align: center;
-        margin-top: 1rem;
-        margin-bottom: 3rem;
-    }
-    .grilla{
-        margin-top: 7rem;
-        margin-bottom: 1rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        justify-items:center;
-        align-items:start;
-        object-fit: cover;
-        row-gap: 0.3rem;
-        column-gap: 3rem;    
-        div{
-           p{
-            margin-top:2rem;
-            font-size: 1.5rem;
-           }
-        }
-    }
-}
-section {
-    .container{
-        @include flex-col-center;
-        .form-container{
-            @include flex-col-center;
-        }
-    }
-}
-.align{
-    div{ 
+    .cont-cajas {
+      width: 256px;
+      align-items: center;
+      @include flex-col-center;
+      .imgproy img {
+        border-radius: 8rem;
+      }
+      .textproy {
         @include flex-center;
-        gap: 2rem;
-        .cont{
-            @include flex-col-center;
+        h3 {
+          margin-top: 1rem;
+          margin-bottom: 1.5rem;
+          font-size: 1.3rem;
+          font-weight: bold;
         }
+        p {
+          margin: 0.1rem;
+        }
+      }
     }
+    .cont-princ {
+      @include flex-center;
+      flex-wrap: wrap;
+      gap: 3rem;
+    }
+  }
+  div {
+    //primer div contenedor e historia
+    .contenedor {
+      // 1
+      @include flex-center;
+      position: relative;
+      height: 43vh;
+      //mixin
+    }
+
+    div {
+      // contenedores content
+
+      .c-img {
+        // contenedor de imagen (1)
+        position: absolute;
+        width: 100%;
+        z-index: 0;
+        overflow: hidden;
+      }
+
+      .c-img img {
+        // 1.2
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+      .txt {
+        // 1.1, clase contenedor
+        @include flex-center;
+        text-align: center;
+        z-index: 1;
+        color: #000000;
+      }
+      .imagen img {
+        width: 100%;
+        height: auto;
+      }
+      div {
+        //div banner
+
+        h1 {
+          // 1.1 dentro
+          font-size: 2rem;
+        }
+        @include flex-col-center;
+        p {
+          font-size: 1rem;
+          margin-top: 2rem;
+        }
+      }
+      h2 {
+        // 2.1.1, texto 2da seccion
+        font-size: 1.5rem;
+      }
+      button {
+        background-color: rgb(0, 0, 0);
+        border-radius: 1rem;
+        color: beige;
+        padding: 0.5rem;
+        font-weight: bold;
+      }
+    }
+  }
+  .cont-hist {
+    background-color: #fef5f4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+    align-items: center;
+    h1 {
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+    //arreglar grilla para que use las 2 columnas y asi se alineen
+    .cont-hist2 {
+      text-align: center;
+      margin: 1rem;
+    }
+    .img-hist {
+      display: flex;
+      align-items: center;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+main {
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  #review-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    .review__card {
+      background-color: #c79098;
+      padding: 1rem;
+      border-radius: 1rem;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      .review__card--text--name {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .review__card--text--description {
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: center;
+        padding: 1.3rem;
+      }
+      .review__card--text--hora {
+        text-align: center;
+      }
+    }
+  }
+  .review__card img {
+    width: 160px;
+    height: auto;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    #review-area {
+      flex-direction: column;
+      justify-content: space-between;
+      .review__card {
+        width: 48%;
+      }
+    }
+  }
 }
